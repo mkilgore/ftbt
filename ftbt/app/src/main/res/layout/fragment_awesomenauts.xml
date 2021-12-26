@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.mkilgore.ftbt.widget.JoyStickPad
+                android:id="@+id/js_analog_left"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/shape_gamepad_bg"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_gamepad_stick" />
+
+            </com.mkilgore.ftbt.widget.JoyStickPad>
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ultra_sonic_sensor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <Space style="@style/EmptySpace.Horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mkilgore.ftbt.widget.GamepadButton
+                        android:id="@+id/btn_x"
+                        style="@style/GamepadButton"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="X" />
+
+                    <com.mkilgore.ftbt.widget.GamepadButton
+                        android:id="@+id/btn_y"
+                        style="@style/GamepadButton"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Y" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.mkilgore.ftbt.widget.GamepadButton
+                        android:id="@+id/btn_a"
+                        style="@style/GamepadButton"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="A" />
+
+                    <com.mkilgore.ftbt.widget.GamepadButton
+                        android:id="@+id/btn_b"
+                        style="@style/GamepadButton"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="B" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.mkilgore.ftbt.widget.GamepadButton
+            android:id="@+id/btn_l1"
+            style="@style/GamepadButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="L1" />
+
+        <Space style="@style/EmptySpace.Horizontal" />
+
+        <com.mkilgore.ftbt.widget.GamepadButton
+            android:id="@+id/btn_r1"
+            style="@style/GamepadButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="R1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_fullscreen"
+        style="@style/FullscreenButton"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

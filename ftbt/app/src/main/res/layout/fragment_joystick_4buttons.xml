@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <com.mkilgore.ftbt.widget.JoyStickPad
+        android:id="@+id/js_analog_left"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/shape_gamepad_bg"
+        android:layout_marginLeft="30dp">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_gamepad_stick" />
+
+    </com.mkilgore.ftbt.widget.JoyStickPad>
+
+    <Space style="@style/EmptySpace.Horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="M2"
+                android:textSize="24sp" />
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/m2_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:max="120"
+                    android:progress="60"
+                    app:seekBarRotation="CW270" />
+
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="M4"
+                android:textSize="24sp" />
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/m4_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:max="120"
+                    android:progress="60"
+                    app:seekBarRotation="CW270" />
+
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space style="@style/EmptySpace.Horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_o3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="O3"
+                android:textSize="36sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_o4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="O4"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_o7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="O7"
+                android:textSize="36sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_o8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="O8"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':bluetoothspp'
+rootProject.name="ftbt"
